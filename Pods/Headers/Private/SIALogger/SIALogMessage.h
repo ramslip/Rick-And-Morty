@@ -1,0 +1,1 @@
+../../../SIALogger/ObjC/SIALogger/SIALogger/Core/SIALogMessage.h

@@ -1,0 +1,992 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42135A452088A79300BC9479 /* RMSelectSpeciesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42135A442088A79300BC9479 /* RMSelectSpeciesViewController.m */; };
+		42135A522088ACC800BC9479 /* MZFormSheetPresentationViewController+RMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 42135A512088ACC800BC9479 /* MZFormSheetPresentationViewController+RMAdditions.m */; };
+		42135A5B2089E27400BC9479 /* RMFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42135A5A2089E27400BC9479 /* RMFilterViewController.m */; };
+		42135A60208DE87C00BC9479 /* RMLocationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42135A5E208DE87C00BC9479 /* RMLocationTableViewCell.m */; };
+		42135A61208DE87C00BC9479 /* RMLocationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42135A5F208DE87C00BC9479 /* RMLocationTableViewCell.xib */; };
+		42135A65208DEC1500BC9479 /* RMLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 42135A64208DEC1500BC9479 /* RMLocation.m */; };
+		42135A68208DED0900BC9479 /* RMAPIClient+Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 42135A67208DED0900BC9479 /* RMAPIClient+Location.m */; };
+		42135A6C208DED9800BC9479 /* RMLocationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42135A6B208DED9800BC9479 /* RMLocationsViewController.m */; };
+		42135A71208F2FB200BC9479 /* RMBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42135A70208F2FB200BC9479 /* RMBaseTableViewCell.m */; };
+		42135A75208F317F00BC9479 /* RMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42135A74208F317F00BC9479 /* RMBaseViewController.m */; };
+		42135A79208F330900BC9479 /* RMStoryboardHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 42135A78208F330900BC9479 /* RMStoryboardHelper.m */; };
+		4289F808207F74C8007143B0 /* RMStringsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4289F807207F74C8007143B0 /* RMStringsHelper.m */; };
+		4289F80A207F750C007143B0 /* strings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4289F809207F750C007143B0 /* strings.strings */; };
+		4289F80D207F7558007143B0 /* RMAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4289F80C207F7558007143B0 /* RMAPIClient.m */; };
+		4289F811207F76FF007143B0 /* RMAPIClient+Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 4289F810207F76FF007143B0 /* RMAPIClient+Character.m */; };
+		4289F814207F7A2D007143B0 /* RMCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4289F813207F7A2D007143B0 /* RMCharacter.m */; };
+		4289F81A207F7D9E007143B0 /* RMMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4289F819207F7D9E007143B0 /* RMMainViewController.m */; };
+		429F79EA207F6959009CC8FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 429F79E9207F6959009CC8FA /* AppDelegate.m */; };
+		429F79ED207F6959009CC8FA /* RMCharacterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 429F79EC207F6959009CC8FA /* RMCharacterViewController.m */; };
+		429F79F0207F6959009CC8FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 429F79EE207F6959009CC8FA /* Main.storyboard */; };
+		429F79F2207F695B009CC8FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 429F79F1207F695B009CC8FA /* Assets.xcassets */; };
+		429F79F5207F695B009CC8FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 429F79F3207F695B009CC8FA /* LaunchScreen.storyboard */; };
+		429F79F8207F695B009CC8FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 429F79F7207F695B009CC8FA /* main.m */; };
+		429F7A02207F695B009CC8FA /* RickAndMortyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 429F7A01207F695B009CC8FA /* RickAndMortyTests.m */; };
+		429F7A0D207F695B009CC8FA /* RickAndMortyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 429F7A0C207F695B009CC8FA /* RickAndMortyUITests.m */; };
+		6321CF1323E273E4F2FED08E /* libPods-RickAndMortyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CCA7382D6BAC4D01CA1365 /* libPods-RickAndMortyTests.a */; };
+		8D08FCADF9A2D790736FEF74 /* libPods-RickAndMortyUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75230DEA8483924FC7A3795B /* libPods-RickAndMortyUITests.a */; };
+		DED163EF1776AC6EE932F65B /* libPods-RickAndMorty.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 770094F20F72178DD0859C10 /* libPods-RickAndMorty.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		429F79FE207F695B009CC8FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 429F79DD207F6959009CC8FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 429F79E4207F6959009CC8FA;
+			remoteInfo = RickAndMorty;
+		};
+		429F7A09207F695B009CC8FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 429F79DD207F6959009CC8FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 429F79E4207F6959009CC8FA;
+			remoteInfo = RickAndMorty;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24F68083452C11C219A32A87 /* Pods-RickAndMortyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAndMortyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RickAndMortyUITests/Pods-RickAndMortyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		37CCA7382D6BAC4D01CA1365 /* libPods-RickAndMortyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RickAndMortyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42135A402087565B00BC9479 /* RMFilterViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMFilterViewDelegate.h; sourceTree = "<group>"; };
+		42135A432088A79300BC9479 /* RMSelectSpeciesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMSelectSpeciesViewController.h; sourceTree = "<group>"; };
+		42135A442088A79300BC9479 /* RMSelectSpeciesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMSelectSpeciesViewController.m; sourceTree = "<group>"; };
+		42135A502088ACC800BC9479 /* MZFormSheetPresentationViewController+RMAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MZFormSheetPresentationViewController+RMAdditions.h"; sourceTree = "<group>"; };
+		42135A512088ACC800BC9479 /* MZFormSheetPresentationViewController+RMAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MZFormSheetPresentationViewController+RMAdditions.m"; sourceTree = "<group>"; };
+		42135A592089E27400BC9479 /* RMFilterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMFilterViewController.h; sourceTree = "<group>"; };
+		42135A5A2089E27400BC9479 /* RMFilterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMFilterViewController.m; sourceTree = "<group>"; };
+		42135A5D208DE87C00BC9479 /* RMLocationTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMLocationTableViewCell.h; sourceTree = "<group>"; };
+		42135A5E208DE87C00BC9479 /* RMLocationTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMLocationTableViewCell.m; sourceTree = "<group>"; };
+		42135A5F208DE87C00BC9479 /* RMLocationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RMLocationTableViewCell.xib; sourceTree = "<group>"; };
+		42135A63208DEC1500BC9479 /* RMLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMLocation.h; sourceTree = "<group>"; };
+		42135A64208DEC1500BC9479 /* RMLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMLocation.m; sourceTree = "<group>"; };
+		42135A66208DED0900BC9479 /* RMAPIClient+Location.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RMAPIClient+Location.h"; sourceTree = "<group>"; };
+		42135A67208DED0900BC9479 /* RMAPIClient+Location.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RMAPIClient+Location.m"; sourceTree = "<group>"; };
+		42135A6A208DED9800BC9479 /* RMLocationsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMLocationsViewController.h; sourceTree = "<group>"; };
+		42135A6B208DED9800BC9479 /* RMLocationsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMLocationsViewController.m; sourceTree = "<group>"; };
+		42135A6F208F2FB200BC9479 /* RMBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMBaseTableViewCell.h; sourceTree = "<group>"; };
+		42135A70208F2FB200BC9479 /* RMBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMBaseTableViewCell.m; sourceTree = "<group>"; };
+		42135A73208F317F00BC9479 /* RMBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMBaseViewController.h; sourceTree = "<group>"; };
+		42135A74208F317F00BC9479 /* RMBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMBaseViewController.m; sourceTree = "<group>"; };
+		42135A77208F330900BC9479 /* RMStoryboardHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMStoryboardHelper.h; sourceTree = "<group>"; };
+		42135A78208F330900BC9479 /* RMStoryboardHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMStoryboardHelper.m; sourceTree = "<group>"; };
+		428410FD207F6E2000FF644F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		4289F806207F74C8007143B0 /* RMStringsHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMStringsHelper.h; sourceTree = "<group>"; };
+		4289F807207F74C8007143B0 /* RMStringsHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMStringsHelper.m; sourceTree = "<group>"; };
+		4289F809207F750C007143B0 /* strings.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = strings.strings; sourceTree = "<group>"; };
+		4289F80B207F7558007143B0 /* RMAPIClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMAPIClient.h; sourceTree = "<group>"; };
+		4289F80C207F7558007143B0 /* RMAPIClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMAPIClient.m; sourceTree = "<group>"; };
+		4289F80E207F7583007143B0 /* RMAPIClient_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMAPIClient_Private.h; sourceTree = "<group>"; };
+		4289F80F207F76FF007143B0 /* RMAPIClient+Character.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RMAPIClient+Character.h"; sourceTree = "<group>"; };
+		4289F810207F76FF007143B0 /* RMAPIClient+Character.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RMAPIClient+Character.m"; sourceTree = "<group>"; };
+		4289F812207F7A2D007143B0 /* RMCharacter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMCharacter.h; sourceTree = "<group>"; };
+		4289F813207F7A2D007143B0 /* RMCharacter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMCharacter.m; sourceTree = "<group>"; };
+		4289F818207F7D9E007143B0 /* RMMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMMainViewController.h; sourceTree = "<group>"; };
+		4289F819207F7D9E007143B0 /* RMMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMMainViewController.m; sourceTree = "<group>"; };
+		429F79E5207F6959009CC8FA /* RickAndMorty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMorty.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		429F79E8207F6959009CC8FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		429F79E9207F6959009CC8FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		429F79EB207F6959009CC8FA /* RMCharacterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMCharacterViewController.h; sourceTree = "<group>"; };
+		429F79EC207F6959009CC8FA /* RMCharacterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMCharacterViewController.m; sourceTree = "<group>"; };
+		429F79EF207F6959009CC8FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		429F79F1207F695B009CC8FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		429F79F4207F695B009CC8FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		429F79F6207F695B009CC8FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		429F79F7207F695B009CC8FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		429F79FD207F695B009CC8FA /* RickAndMortyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RickAndMortyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		429F7A01207F695B009CC8FA /* RickAndMortyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RickAndMortyTests.m; sourceTree = "<group>"; };
+		429F7A03207F695B009CC8FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		429F7A08207F695B009CC8FA /* RickAndMortyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RickAndMortyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		429F7A0C207F695B009CC8FA /* RickAndMortyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RickAndMortyUITests.m; sourceTree = "<group>"; };
+		429F7A0E207F695B009CC8FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B9EB1FECA6A9512ADDF8996 /* Pods-RickAndMorty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAndMorty.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RickAndMorty/Pods-RickAndMorty.debug.xcconfig"; sourceTree = "<group>"; };
+		75230DEA8483924FC7A3795B /* libPods-RickAndMortyUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RickAndMortyUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		770094F20F72178DD0859C10 /* libPods-RickAndMorty.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RickAndMorty.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80767FA87360A27CFC7F83C2 /* Pods-RickAndMorty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAndMorty.release.xcconfig"; path = "Pods/Target Support Files/Pods-RickAndMorty/Pods-RickAndMorty.release.xcconfig"; sourceTree = "<group>"; };
+		AE8016FCC3C7E8E9595C5F81 /* Pods-RickAndMortyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAndMortyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RickAndMortyUITests/Pods-RickAndMortyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		ED0BCB9A236809C6A4479FC9 /* Pods-RickAndMortyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAndMortyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RickAndMortyTests/Pods-RickAndMortyTests.release.xcconfig"; sourceTree = "<group>"; };
+		EF46F087BEC71372A8870F4B /* Pods-RickAndMortyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAndMortyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RickAndMortyTests/Pods-RickAndMortyTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		429F79E2207F6959009CC8FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DED163EF1776AC6EE932F65B /* libPods-RickAndMorty.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		429F79FA207F695B009CC8FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6321CF1323E273E4F2FED08E /* libPods-RickAndMortyTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		429F7A05207F695B009CC8FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D08FCADF9A2D790736FEF74 /* libPods-RickAndMortyUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42135A422088A75E00BC9479 /* RMSelectSpeciesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				42135A432088A79300BC9479 /* RMSelectSpeciesViewController.h */,
+				42135A442088A79300BC9479 /* RMSelectSpeciesViewController.m */,
+			);
+			path = RMSelectSpeciesViewController;
+			sourceTree = "<group>";
+		};
+		42135A4D2088AC8100BC9479 /* RMStringsHelper */ = {
+			isa = PBXGroup;
+			children = (
+				4289F806207F74C8007143B0 /* RMStringsHelper.h */,
+				4289F807207F74C8007143B0 /* RMStringsHelper.m */,
+			);
+			path = RMStringsHelper;
+			sourceTree = "<group>";
+		};
+		42135A4E2088AC9000BC9479 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				42135A4F2088AC9700BC9479 /* MZFormSheetPresentationController */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		42135A4F2088AC9700BC9479 /* MZFormSheetPresentationController */ = {
+			isa = PBXGroup;
+			children = (
+				42135A502088ACC800BC9479 /* MZFormSheetPresentationViewController+RMAdditions.h */,
+				42135A512088ACC800BC9479 /* MZFormSheetPresentationViewController+RMAdditions.m */,
+			);
+			path = MZFormSheetPresentationController;
+			sourceTree = "<group>";
+		};
+		42135A582089E25300BC9479 /* RMFilterViewController */ = {
+			isa = PBXGroup;
+			children = (
+				42135A592089E27400BC9479 /* RMFilterViewController.h */,
+				42135A5A2089E27400BC9479 /* RMFilterViewController.m */,
+				42135A402087565B00BC9479 /* RMFilterViewDelegate.h */,
+			);
+			path = RMFilterViewController;
+			sourceTree = "<group>";
+		};
+		42135A5C208DE85B00BC9479 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				42135A6E208F2F9900BC9479 /* RMBaseTableViewCell */,
+				42135A6D208F2F8C00BC9479 /* RMLocationTableViewCell */,
+			);
+			name = TableViewCells;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		42135A62208DEC0600BC9479 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				42135A63208DEC1500BC9479 /* RMLocation.h */,
+				42135A64208DEC1500BC9479 /* RMLocation.m */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		42135A69208DED7A00BC9479 /* RMLocationsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				42135A6A208DED9800BC9479 /* RMLocationsViewController.h */,
+				42135A6B208DED9800BC9479 /* RMLocationsViewController.m */,
+			);
+			path = RMLocationsViewController;
+			sourceTree = "<group>";
+		};
+		42135A6D208F2F8C00BC9479 /* RMLocationTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				42135A5D208DE87C00BC9479 /* RMLocationTableViewCell.h */,
+				42135A5E208DE87C00BC9479 /* RMLocationTableViewCell.m */,
+				42135A5F208DE87C00BC9479 /* RMLocationTableViewCell.xib */,
+			);
+			path = RMLocationTableViewCell;
+			sourceTree = "<group>";
+		};
+		42135A6E208F2F9900BC9479 /* RMBaseTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				42135A6F208F2FB200BC9479 /* RMBaseTableViewCell.h */,
+				42135A70208F2FB200BC9479 /* RMBaseTableViewCell.m */,
+			);
+			path = RMBaseTableViewCell;
+			sourceTree = "<group>";
+		};
+		42135A72208F314100BC9479 /* RMBaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				42135A73208F317F00BC9479 /* RMBaseViewController.h */,
+				42135A74208F317F00BC9479 /* RMBaseViewController.m */,
+			);
+			path = RMBaseViewController;
+			sourceTree = "<group>";
+		};
+		42135A76208F32F300BC9479 /* RMStoryboardHelper */ = {
+			isa = PBXGroup;
+			children = (
+				42135A77208F330900BC9479 /* RMStoryboardHelper.h */,
+				42135A78208F330900BC9479 /* RMStoryboardHelper.m */,
+			);
+			path = RMStoryboardHelper;
+			sourceTree = "<group>";
+		};
+		4289F7FD207F717F007143B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4289F803207F7395007143B0 /* APIClient */,
+				4289F804207F739C007143B0 /* Mantle */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4289F7FE207F7186007143B0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				42135A5C208DE85B00BC9479 /* TableViewCells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4289F7FF207F718E007143B0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				42135A72208F314100BC9479 /* RMBaseViewController */,
+				42135A69208DED7A00BC9479 /* RMLocationsViewController */,
+				42135A582089E25300BC9479 /* RMFilterViewController */,
+				42135A422088A75E00BC9479 /* RMSelectSpeciesViewController */,
+				4289F817207F7D7F007143B0 /* RMMainViewController */,
+				4289F816207F7D6C007143B0 /* RMCharacterViewController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4289F800207F719E007143B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				428410FD207F6E2000FF644F /* PrefixHeader.pch */,
+				429F79E8207F6959009CC8FA /* AppDelegate.h */,
+				429F79E9207F6959009CC8FA /* AppDelegate.m */,
+				429F79F7207F695B009CC8FA /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4289F801207F71BE007143B0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				42135A4E2088AC9000BC9479 /* Categories */,
+				4289F805207F74A0007143B0 /* Helpers */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4289F802207F71C9007143B0 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				429F79F6207F695B009CC8FA /* Info.plist */,
+				429F79F1207F695B009CC8FA /* Assets.xcassets */,
+				4289F809207F750C007143B0 /* strings.strings */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		4289F803207F7395007143B0 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				4289F80B207F7558007143B0 /* RMAPIClient.h */,
+				4289F80C207F7558007143B0 /* RMAPIClient.m */,
+				4289F80E207F7583007143B0 /* RMAPIClient_Private.h */,
+				4289F80F207F76FF007143B0 /* RMAPIClient+Character.h */,
+				4289F810207F76FF007143B0 /* RMAPIClient+Character.m */,
+				42135A66208DED0900BC9479 /* RMAPIClient+Location.h */,
+				42135A67208DED0900BC9479 /* RMAPIClient+Location.m */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		4289F804207F739C007143B0 /* Mantle */ = {
+			isa = PBXGroup;
+			children = (
+				42135A62208DEC0600BC9479 /* Location */,
+				4289F815207F7A30007143B0 /* Character */,
+			);
+			path = Mantle;
+			sourceTree = "<group>";
+		};
+		4289F805207F74A0007143B0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				42135A76208F32F300BC9479 /* RMStoryboardHelper */,
+				42135A4D2088AC8100BC9479 /* RMStringsHelper */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4289F815207F7A30007143B0 /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				4289F812207F7A2D007143B0 /* RMCharacter.h */,
+				4289F813207F7A2D007143B0 /* RMCharacter.m */,
+			);
+			name = Character;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		4289F816207F7D6C007143B0 /* RMCharacterViewController */ = {
+			isa = PBXGroup;
+			children = (
+				429F79EB207F6959009CC8FA /* RMCharacterViewController.h */,
+				429F79EC207F6959009CC8FA /* RMCharacterViewController.m */,
+			);
+			path = RMCharacterViewController;
+			sourceTree = "<group>";
+		};
+		4289F817207F7D7F007143B0 /* RMMainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4289F818207F7D9E007143B0 /* RMMainViewController.h */,
+				4289F819207F7D9E007143B0 /* RMMainViewController.m */,
+			);
+			path = RMMainViewController;
+			sourceTree = "<group>";
+		};
+		429F79DC207F6959009CC8FA = {
+			isa = PBXGroup;
+			children = (
+				429F79E7207F6959009CC8FA /* RickAndMorty */,
+				429F7A00207F695B009CC8FA /* RickAndMortyTests */,
+				429F7A0B207F695B009CC8FA /* RickAndMortyUITests */,
+				429F79E6207F6959009CC8FA /* Products */,
+				A23BE12DFB6C33D4939C113F /* Pods */,
+				E32F7515408BE77E38625F6B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		429F79E6207F6959009CC8FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				429F79E5207F6959009CC8FA /* RickAndMorty.app */,
+				429F79FD207F695B009CC8FA /* RickAndMortyTests.xctest */,
+				429F7A08207F695B009CC8FA /* RickAndMortyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		429F79E7207F6959009CC8FA /* RickAndMorty */ = {
+			isa = PBXGroup;
+			children = (
+				4289F7FD207F717F007143B0 /* Model */,
+				4289F7FE207F7186007143B0 /* View */,
+				4289F7FF207F718E007143B0 /* Controller */,
+				4289F801207F71BE007143B0 /* Extensions */,
+				4289F802207F71C9007143B0 /* Resourses */,
+				4289F800207F719E007143B0 /* Supporting Files */,
+				429F79EE207F6959009CC8FA /* Main.storyboard */,
+				429F79F3207F695B009CC8FA /* LaunchScreen.storyboard */,
+			);
+			path = RickAndMorty;
+			sourceTree = "<group>";
+		};
+		429F7A00207F695B009CC8FA /* RickAndMortyTests */ = {
+			isa = PBXGroup;
+			children = (
+				429F7A01207F695B009CC8FA /* RickAndMortyTests.m */,
+				429F7A03207F695B009CC8FA /* Info.plist */,
+			);
+			path = RickAndMortyTests;
+			sourceTree = "<group>";
+		};
+		429F7A0B207F695B009CC8FA /* RickAndMortyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				429F7A0C207F695B009CC8FA /* RickAndMortyUITests.m */,
+				429F7A0E207F695B009CC8FA /* Info.plist */,
+			);
+			path = RickAndMortyUITests;
+			sourceTree = "<group>";
+		};
+		A23BE12DFB6C33D4939C113F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B9EB1FECA6A9512ADDF8996 /* Pods-RickAndMorty.debug.xcconfig */,
+				80767FA87360A27CFC7F83C2 /* Pods-RickAndMorty.release.xcconfig */,
+				EF46F087BEC71372A8870F4B /* Pods-RickAndMortyTests.debug.xcconfig */,
+				ED0BCB9A236809C6A4479FC9 /* Pods-RickAndMortyTests.release.xcconfig */,
+				24F68083452C11C219A32A87 /* Pods-RickAndMortyUITests.debug.xcconfig */,
+				AE8016FCC3C7E8E9595C5F81 /* Pods-RickAndMortyUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E32F7515408BE77E38625F6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				770094F20F72178DD0859C10 /* libPods-RickAndMorty.a */,
+				37CCA7382D6BAC4D01CA1365 /* libPods-RickAndMortyTests.a */,
+				75230DEA8483924FC7A3795B /* libPods-RickAndMortyUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		429F79E4207F6959009CC8FA /* RickAndMorty */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 429F7A11207F695B009CC8FA /* Build configuration list for PBXNativeTarget "RickAndMorty" */;
+			buildPhases = (
+				DCB546EC5889BFC265560718 /* [CP] Check Pods Manifest.lock */,
+				429F79E1207F6959009CC8FA /* Sources */,
+				429F79E2207F6959009CC8FA /* Frameworks */,
+				429F79E3207F6959009CC8FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RickAndMorty;
+			productName = RickAndMorty;
+			productReference = 429F79E5207F6959009CC8FA /* RickAndMorty.app */;
+			productType = "com.apple.product-type.application";
+		};
+		429F79FC207F695B009CC8FA /* RickAndMortyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 429F7A14207F695B009CC8FA /* Build configuration list for PBXNativeTarget "RickAndMortyTests" */;
+			buildPhases = (
+				D250F4E960209147BBC14596 /* [CP] Check Pods Manifest.lock */,
+				429F79F9207F695B009CC8FA /* Sources */,
+				429F79FA207F695B009CC8FA /* Frameworks */,
+				429F79FB207F695B009CC8FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				429F79FF207F695B009CC8FA /* PBXTargetDependency */,
+			);
+			name = RickAndMortyTests;
+			productName = RickAndMortyTests;
+			productReference = 429F79FD207F695B009CC8FA /* RickAndMortyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		429F7A07207F695B009CC8FA /* RickAndMortyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 429F7A17207F695B009CC8FA /* Build configuration list for PBXNativeTarget "RickAndMortyUITests" */;
+			buildPhases = (
+				B1ABDDA21506D629F14AEB66 /* [CP] Check Pods Manifest.lock */,
+				429F7A04207F695B009CC8FA /* Sources */,
+				429F7A05207F695B009CC8FA /* Frameworks */,
+				429F7A06207F695B009CC8FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				429F7A0A207F695B009CC8FA /* PBXTargetDependency */,
+			);
+			name = RickAndMortyUITests;
+			productName = RickAndMortyUITests;
+			productReference = 429F7A08207F695B009CC8FA /* RickAndMortyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		429F79DD207F6959009CC8FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Ekaterina Lapkovskaya";
+				TargetAttributes = {
+					429F79E4207F6959009CC8FA = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					429F79FC207F695B009CC8FA = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 429F79E4207F6959009CC8FA;
+					};
+					429F7A07207F695B009CC8FA = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 429F79E4207F6959009CC8FA;
+					};
+				};
+			};
+			buildConfigurationList = 429F79E0207F6959009CC8FA /* Build configuration list for PBXProject "RickAndMorty" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 429F79DC207F6959009CC8FA;
+			productRefGroup = 429F79E6207F6959009CC8FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				429F79E4207F6959009CC8FA /* RickAndMorty */,
+				429F79FC207F695B009CC8FA /* RickAndMortyTests */,
+				429F7A07207F695B009CC8FA /* RickAndMortyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		429F79E3207F6959009CC8FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				429F79F5207F695B009CC8FA /* LaunchScreen.storyboard in Resources */,
+				42135A61208DE87C00BC9479 /* RMLocationTableViewCell.xib in Resources */,
+				4289F80A207F750C007143B0 /* strings.strings in Resources */,
+				429F79F2207F695B009CC8FA /* Assets.xcassets in Resources */,
+				429F79F0207F6959009CC8FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		429F79FB207F695B009CC8FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		429F7A06207F695B009CC8FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B1ABDDA21506D629F14AEB66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RickAndMortyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D250F4E960209147BBC14596 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RickAndMortyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCB546EC5889BFC265560718 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RickAndMorty-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		429F79E1207F6959009CC8FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				429F79ED207F6959009CC8FA /* RMCharacterViewController.m in Sources */,
+				4289F808207F74C8007143B0 /* RMStringsHelper.m in Sources */,
+				42135A452088A79300BC9479 /* RMSelectSpeciesViewController.m in Sources */,
+				42135A68208DED0900BC9479 /* RMAPIClient+Location.m in Sources */,
+				429F79F8207F695B009CC8FA /* main.m in Sources */,
+				4289F80D207F7558007143B0 /* RMAPIClient.m in Sources */,
+				4289F81A207F7D9E007143B0 /* RMMainViewController.m in Sources */,
+				4289F811207F76FF007143B0 /* RMAPIClient+Character.m in Sources */,
+				42135A60208DE87C00BC9479 /* RMLocationTableViewCell.m in Sources */,
+				42135A6C208DED9800BC9479 /* RMLocationsViewController.m in Sources */,
+				4289F814207F7A2D007143B0 /* RMCharacter.m in Sources */,
+				42135A65208DEC1500BC9479 /* RMLocation.m in Sources */,
+				42135A522088ACC800BC9479 /* MZFormSheetPresentationViewController+RMAdditions.m in Sources */,
+				42135A71208F2FB200BC9479 /* RMBaseTableViewCell.m in Sources */,
+				42135A75208F317F00BC9479 /* RMBaseViewController.m in Sources */,
+				42135A79208F330900BC9479 /* RMStoryboardHelper.m in Sources */,
+				429F79EA207F6959009CC8FA /* AppDelegate.m in Sources */,
+				42135A5B2089E27400BC9479 /* RMFilterViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		429F79F9207F695B009CC8FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				429F7A02207F695B009CC8FA /* RickAndMortyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		429F7A04207F695B009CC8FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				429F7A0D207F695B009CC8FA /* RickAndMortyUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		429F79FF207F695B009CC8FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 429F79E4207F6959009CC8FA /* RickAndMorty */;
+			targetProxy = 429F79FE207F695B009CC8FA /* PBXContainerItemProxy */;
+		};
+		429F7A0A207F695B009CC8FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 429F79E4207F6959009CC8FA /* RickAndMorty */;
+			targetProxy = 429F7A09207F695B009CC8FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		429F79EE207F6959009CC8FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				429F79EF207F6959009CC8FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		429F79F3207F695B009CC8FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				429F79F4207F695B009CC8FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		429F7A0F207F695B009CC8FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		429F7A10207F695B009CC8FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		429F7A12207F695B009CC8FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B9EB1FECA6A9512ADDF8996 /* Pods-RickAndMorty.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 786542FH4E;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Supporting Files/PrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/RickAndMorty/Resourses/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.el.RickAndMorty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		429F7A13207F695B009CC8FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80767FA87360A27CFC7F83C2 /* Pods-RickAndMorty.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 786542FH4E;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Supporting Files/PrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/RickAndMorty/Resourses/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.el.RickAndMorty;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		429F7A15207F695B009CC8FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF46F087BEC71372A8870F4B /* Pods-RickAndMortyTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 786542FH4E;
+				INFOPLIST_FILE = RickAndMortyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.el.RickAndMortyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RickAndMorty.app/RickAndMorty";
+			};
+			name = Debug;
+		};
+		429F7A16207F695B009CC8FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED0BCB9A236809C6A4479FC9 /* Pods-RickAndMortyTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 786542FH4E;
+				INFOPLIST_FILE = RickAndMortyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.el.RickAndMortyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RickAndMorty.app/RickAndMorty";
+			};
+			name = Release;
+		};
+		429F7A18207F695B009CC8FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24F68083452C11C219A32A87 /* Pods-RickAndMortyUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 786542FH4E;
+				INFOPLIST_FILE = RickAndMortyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.el.RickAndMortyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RickAndMorty;
+			};
+			name = Debug;
+		};
+		429F7A19207F695B009CC8FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE8016FCC3C7E8E9595C5F81 /* Pods-RickAndMortyUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 786542FH4E;
+				INFOPLIST_FILE = RickAndMortyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.el.RickAndMortyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RickAndMorty;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		429F79E0207F6959009CC8FA /* Build configuration list for PBXProject "RickAndMorty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				429F7A0F207F695B009CC8FA /* Debug */,
+				429F7A10207F695B009CC8FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		429F7A11207F695B009CC8FA /* Build configuration list for PBXNativeTarget "RickAndMorty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				429F7A12207F695B009CC8FA /* Debug */,
+				429F7A13207F695B009CC8FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		429F7A14207F695B009CC8FA /* Build configuration list for PBXNativeTarget "RickAndMortyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				429F7A15207F695B009CC8FA /* Debug */,
+				429F7A16207F695B009CC8FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		429F7A17207F695B009CC8FA /* Build configuration list for PBXNativeTarget "RickAndMortyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				429F7A18207F695B009CC8FA /* Debug */,
+				429F7A19207F695B009CC8FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 429F79DD207F6959009CC8FA /* Project object */;
+}

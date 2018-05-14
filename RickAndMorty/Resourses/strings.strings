@@ -1,0 +1,14 @@
+/* 
+  strings.strings
+  RickAndMorty
+
+  Created by Ekaterina Lapkovskaya on 12.04.2018.
+  Copyright © 2018 Ekaterina Lapkovskaya. All rights reserved.
+*/
+
+"title.cancel" = "Cancel";
+"title.filter" = "Filter";
+"title.search" = "Search";
+"title.locations" = "Locations";
+
+"controller.character.created" = "id: %lu - created %ld month ago";

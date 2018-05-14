@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  RickAndMorty
+//
+//  Created by Ekaterina Lapkovskaya on 12.04.2018.
+//  Copyright © 2018 Ekaterina Lapkovskaya. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "EXTScope.h"
+#import "RMStringsHelper.h"
+
+#endif /* PrefixHeader_pch */
