@@ -305,14 +305,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		4289F802207F71C9007143B0 /* Resourses */ = {
+		4289F802207F71C9007143B0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				429F79F6207F695B009CC8FA /* Info.plist */,
 				429F79F1207F695B009CC8FA /* Assets.xcassets */,
 				4289F809207F750C007143B0 /* strings.strings */,
 			);
-			path = Resourses;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		4289F803207F7395007143B0 /* APIClient */ = {
@@ -404,7 +404,7 @@
 				4289F7FE207F7186007143B0 /* View */,
 				4289F7FF207F718E007143B0 /* Controller */,
 				4289F801207F71BE007143B0 /* Extensions */,
-				4289F802207F71C9007143B0 /* Resourses */,
+				4289F802207F71C9007143B0 /* Resources */,
 				4289F800207F719E007143B0 /* Supporting Files */,
 				429F79EE207F6959009CC8FA /* Main.storyboard */,
 				429F79F3207F695B009CC8FA /* LaunchScreen.storyboard */,
