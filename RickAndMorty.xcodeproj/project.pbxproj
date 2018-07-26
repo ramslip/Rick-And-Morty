@@ -836,7 +836,7 @@
 				DEVELOPMENT_TEAM = 786542FH4E;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Supporting Files/PrefixHeader.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/RickAndMorty/Resourses/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/RickAndMorty/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -857,7 +857,7 @@
 				DEVELOPMENT_TEAM = 786542FH4E;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Supporting Files/PrefixHeader.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/RickAndMorty/Resourses/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/RickAndMorty/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
